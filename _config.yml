@@ -5,7 +5,7 @@ bio: Foodie / Sports Fan / Cinephile / Stargazer<br />
   Human-Computer Interaction Enthusiast / Software Engineer
 
 # twitter summary info
-description: A blog about technology and stuff related
+description: Seongtaek Lim's Website
 
 # if it's an external image, update below for true
 # better with square images
@@ -14,7 +14,7 @@ picture: assets/images/profile.jpg
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
-resume: true
+cv: true
 resume-external: true
 resume-url: https://google.com/?q=my+resume
 
@@ -55,30 +55,35 @@ github: stlim0730
 email: seongtaek.lim0730@gmail.com
 
 authors:
-  johndoe:
-    name: John Doe
-    bio: A Man who travels the world eating noodles
+  eh71:
+    name: Seongtaek Lim
+    bio: TBD
     external-image: false
     picture: assets/images/profile.jpg
-    twitter: johndoe
-  jamesfoster:
-    name: James Foster
-    bio: A Man who develops software with coffee
-    external-image: false
-    picture: assets/images/james.jpg
-    twitter: jamesfoster
+  # johndoe:
+  #   name: John Doe
+  #   bio: A Man who travels the world eating noodles
+  #   external-image: false
+  #   picture: assets/images/profile.jpg
+  #   twitter: johndoe
+  # jamesfoster:
+  #   name: James Foster
+  #   bio: A Man who develops software with coffee
+  #   external-image: false
+  #   picture: assets/images/james.jpg
+  #   twitter: jamesfoster
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
 # normal = 560px / large = 810px
-width: normal
+width: large
 
 # if you do/don't need pagination, toggle 'enabled' between true/false below
 pagination:
   enabled: true
   sort_reverse: true # display recent posts first
   title: ":title" # Changing this will mess up the header display logic
-  per_page: 10
+  per_page: 5
   permalink: "/:num/" # pagination link that will be appended
 
 # if you don't need projects, comment the *projects* configs below
@@ -87,6 +92,12 @@ projects: true
 # if you don't need "about" or "blog", comment them out below
 about: true
 blog: true
+
+# if you don't need "photography", comment them out below
+photography: true
+
+# if you don't need "photography", comment them out below
+publications: true
 
 # do you want to show the "read time" of the posts?
 read-time: true
