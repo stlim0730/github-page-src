@@ -1,6 +1,8 @@
 # main text of home
 name: Seongtaek Lim
-bio: A Man who travels the world eating noodles
+bio: Foodie / Sports Fan / Cinephile / Stargazer<br />
+  Amateur Photographer / Baking Hobbyist<br />
+  Human-Computer Interaction Enthusiast / Software Engineer
 
 # twitter summary info
 description: A blog about technology and stuff related
@@ -16,7 +18,7 @@ resume: true
 resume-external: true
 resume-url: https://google.com/?q=my+resume
 
-url: https://sergiokopplin.github.io/indigo
+url: https://github.com/stlim0730/new-home
 # your url: https://USERNAME.github.io
 
 permalink: /:title/
@@ -31,26 +33,26 @@ permalink: /:title/
 # if you don't want comments in your posts, leave categories empty
 disqus:
   shortname: mydisqus # enter this from your disqus account
-  categories: [blog, project] # only show disqus for posts that have these categories
+  categories: [] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-facebook: myfacebook
-twitter: mytwitter
-# instagram: myinstagram
+facebook: seongtaek.lim.52
+twitter: EH71
+instagram: eh71eh71
 # pinterest: mypinterest
-# linkedin: mylinkedin
+linkedin: seongtaek-lim-41488030
 # youtube: myyoutube
 # spotify: myspotify
-github: mygithub
+github: stlim0730
 # gitlab: mygitlab
 # lastfm: mylastfm
 # stackoverflow: 7044681/mystackoverflow
 # quora: userquora
 # reddit: username
-medium: medium
+# medium: medium
 # vimeo: myvimeo
 # lanyrd: mylanyrd
-email: myemail@gmail.com
+email: seongtaek.lim0730@gmail.com
 
 authors:
   johndoe:
@@ -73,10 +75,10 @@ width: normal
 
 # if you do/don't need pagination, toggle 'enabled' between true/false below
 pagination:
-  enabled: false
+  enabled: true
   sort_reverse: true # display recent posts first
   title: ":title" # Changing this will mess up the header display logic
-  per_page: 5
+  per_page: 10
   permalink: "/:num/" # pagination link that will be appended
 
 # if you don't need projects, comment the *projects* configs below

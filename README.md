@@ -64,3 +64,12 @@ Check the [FAQ](./FAQ.md) if you have any doubt or problem.
 ## License
 
 [MIT](https://kopplin.mit-license.org/) License © Sérgio Kopplin
+
+## Install Ruby
+
+```
+ruby -v
+curl -L https://get.rvm.io | bash -s stable
+rvm install ruby-<version>
+rvm --default use <version>
+```
