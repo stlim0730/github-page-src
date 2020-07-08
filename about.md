@@ -2,24 +2,33 @@
 title: About
 layout: page
 ---
+
 ![Profile Image]({% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %})
 
-<p>Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<ul>
+	<li>
+		I <strong>build</strong> novel interactive software tools for collaboration and analysis.
+	</li>
+	<li>
+	  I also <strong>analyze</strong> large data using statistics and machine learning techniques.
+	</li>
+	<li>
+	  My research addresses how my software bringing <strong>novel workflows and interactions impact</strong> user behaviors.
+	</li>
+</ul>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>
+	I'm a software engineer at Adobe. I analyze the usage data of Photoshop Camera (a.k.a Project Phylo) and build data processing pipeline of the product using Hadoop. I also build web-based tools internally used in my team.
+</p>
+<p>
+  In academia, I'm the creator of GLIDE (Git-Learning IDE), MOOCchat, Farmview, CoHeadline, and WordToRI. See <a class="url" href="{{ site.url }}/projects">research & projects</a> for more.
+</p>
+<p>
+  I received PhD in Information Science at Cornell University. I studied at Cornell Tech campus in New York City with professor Tapan Parikh. I received MS in Cognitive Engineering and BA in Computer Science at Yonsei University. See <a class="url" href="{{ site.url }}/publications">publications</a> for more.
+</p>
 
+<!--
 <h2>Skills</h2>
-
 <ul class="skill-list">
 	<li>HTML - Jade - Haml - Erb</li>
 	<li>Responsive (Mobile First)</li>
@@ -38,9 +47,9 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </ul>
 
 <h2>Projects</h2>
-
 <ul>
 	<li><a href="https://github.com/">Lorem Lorem</a></li>
 	<li><a href="https://github.com/">Ipsum Dolor</a></li>
 	<li><a href="https://github.com/">Dolor Lorem</a></li>
 </ul>
+-->
