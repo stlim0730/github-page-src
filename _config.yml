@@ -1,9 +1,11 @@
 # main text of home
 name: Seongtaek Lim
-bio: A Man who travels the world eating noodles
+bio: Foodie / Sports Fan / Cinephile / Stargazer<br />
+  Amateur Photographer / Baking Hobbyist<br />
+  Human-Computer Interaction Enthusiast / Software Engineer
 
 # twitter summary info
-description: A blog about technology and stuff related
+description: Seongtaek Lim's Website
 
 # if it's an external image, update below for true
 # better with square images
@@ -12,11 +14,11 @@ picture: assets/images/profile.jpg
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
-resume: true
+cv: true
 resume-external: true
 resume-url: https://google.com/?q=my+resume
 
-url: https://sergiokopplin.github.io/indigo
+url: https://github.com/stlim0730/new-home
 # your url: https://USERNAME.github.io
 
 permalink: /:title/
@@ -31,49 +33,54 @@ permalink: /:title/
 # if you don't want comments in your posts, leave categories empty
 disqus:
   shortname: mydisqus # enter this from your disqus account
-  categories: [blog, project] # only show disqus for posts that have these categories
+  categories: [] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-facebook: myfacebook
-twitter: mytwitter
-# instagram: myinstagram
+facebook: seongtaek.lim.52
+twitter: EH71
+instagram: eh71eh71
 # pinterest: mypinterest
-# linkedin: mylinkedin
+linkedin: seongtaek-lim-41488030
 # youtube: myyoutube
 # spotify: myspotify
-github: mygithub
+github: stlim0730
 # gitlab: mygitlab
 # lastfm: mylastfm
 # stackoverflow: 7044681/mystackoverflow
 # quora: userquora
 # reddit: username
-medium: medium
+# medium: medium
 # vimeo: myvimeo
 # lanyrd: mylanyrd
-email: myemail@gmail.com
+email: seongtaek.lim0730@gmail.com
 
 authors:
-  johndoe:
-    name: John Doe
-    bio: A Man who travels the world eating noodles
+  eh71:
+    name: Seongtaek Lim
+    bio: TBD
     external-image: false
     picture: assets/images/profile.jpg
-    twitter: johndoe
-  jamesfoster:
-    name: James Foster
-    bio: A Man who develops software with coffee
-    external-image: false
-    picture: assets/images/james.jpg
-    twitter: jamesfoster
+  # johndoe:
+  #   name: John Doe
+  #   bio: A Man who travels the world eating noodles
+  #   external-image: false
+  #   picture: assets/images/profile.jpg
+  #   twitter: johndoe
+  # jamesfoster:
+  #   name: James Foster
+  #   bio: A Man who develops software with coffee
+  #   external-image: false
+  #   picture: assets/images/james.jpg
+  #   twitter: jamesfoster
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
 # normal = 560px / large = 810px
-width: normal
+width: large
 
 # if you do/don't need pagination, toggle 'enabled' between true/false below
 pagination:
-  enabled: false
+  enabled: true
   sort_reverse: true # display recent posts first
   title: ":title" # Changing this will mess up the header display logic
   per_page: 5
@@ -85,6 +92,12 @@ projects: true
 # if you don't need "about" or "blog", comment them out below
 about: true
 blog: true
+
+# if you don't need "photography", comment them out below
+photography: true
+
+# if you don't need "photography", comment them out below
+publications: true
 
 # do you want to show the "read time" of the posts?
 read-time: true
