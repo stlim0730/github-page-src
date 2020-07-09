@@ -3,6 +3,10 @@ layout: default
 ---
 {% include header.html %}
 
-{{content}}
+{% if page.title != "Home" %}
+  <h2>{{ page.title }}</h2>
+{% endif %}
+
+{{ content }}
 
 {% include footer.html %}
