@@ -1,69 +1,8 @@
-<p align="center">
-    <h2 align="center">Indigo Minimalist Jekyll Template - <a href="https://sergiokopplin.github.io/indigo/">Demo</a> · <a href="https://travis-ci.org/sergiokopplin/indigo"><img src="https://camo.githubusercontent.com/5393485b732749b3499264168fa8af60166071e8/68747470733a2f2f7472617669732d63692e6f72672f73657267696f6b6f70706c696e2f696e6469676f2e7376673f6272616e63683d67682d7061676573" alt="Build Status" data-canonical-src="https://travis-ci.org/sergiokopplin/indigo.svg?branch=gh-pages" style="max-width:100%;"></a></h2>
-</p>
-
-<p align="center">This is a simple and minimalist template for Jekyll for those who likes to eat noodles.</p>
-
-***
-
-<p align="center">
-    <b><a href="README.md#what-has-inside">What has inside</a></b>
-    |
-    <b><a href="README.md#setup">Setup</a></b>
-    |
-    <b><a href="README.md#settings">Settings</a></b>
-    |
-    <b><a href="README.md#how-to">How to</a></b>
-</p>
-
-<p align="center">
-    <img src="https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png" />
-</p>
-
-## What has inside
-
-- [Jekyll](https://jekyllrb.com/), [Sass](https://sass-lang.com/) ~[RSCSS](https://rscss.io/)~ and [SVG](https://www.w3.org/Graphics/SVG/);
-- Tests with [Travis](https://travis-ci.org/);
-- Google Speed: [98/100](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsergiokopplin.github.io%2Findigo%2F);
-- No JS. :sunglasses:
-
-## Setup
-
-0. :star: to the project. :metal:
-1. Fork the project [Indigo](https://github.com/sergiokopplin/indigo/fork)
-2. Edit `_config.yml` with your data (check <a href="README.md#settings">settings</a> section)
-3. Write some posts :bowtie:
-
-If you want to test locally on your machine, do the following steps also:
-
 1. Install [Jekyll](https://jekyllrb.com), [NodeJS](https://nodejs.org/) and [Bundler](https://bundler.io/).
 2. Clone the forked repo on your machine
 3. Enter the cloned folder via terminal and run `bundle install`
 4. Then run `bundle exec jekyll serve --config _config.yml,_config-dev.yml`
 5. Open it in your browser: `http://localhost:4000`
-6. Do you want to use the [jekyll-admin](https://jekyll.github.io/jekyll-admin/) plugin to edit your posts? Go to the admin panel: `http://localhost:4000/admin`. The admin panel will not work on GitHub Pages, [only locally](https://github.com/jekyll/jekyll-admin/issues/341#issuecomment-292739469).
-
-## Settings
-
-You must fill some informations on `_config.yml` to customize your site.
-
-```
-name: John Doe
-bio: 'A Man who travels the world eating noodles'
-picture: 'assets/images/profile.jpg'
-...
-
-and lot of other options, like width, projects, pages, read-time, tags, related posts, animations, multiple-authors, etc.
-```
-
-## How To?
-
-Check the [FAQ](./FAQ.md) if you have any doubt or problem.
-
----
-## License
-
-[MIT](https://kopplin.mit-license.org/) License © Sérgio Kopplin
 
 ## Install Ruby
 
@@ -75,6 +14,8 @@ rvm --default use <version>
 ```
 
 ## For Gallery Feature
+
+[Jekyll Art Gallery Plugin](https://github.com/alexivkin/Jekyll-Art-Gallery-Plugin)
 
 ```
 brew install ghostscript imagemagick imagemagick
@@ -90,12 +31,13 @@ The plugin will use copy files from the source folder into the destination folde
 
 The plugin auto-discovers, enumerates the folders and files, resizes/cleans EXIF if necessary and copies to the generated site directory. It creates the thumbnails and front page images if necessary, saves them into the thumbs subfolders. You could, but do not have to define individual galleries in gallery.yaml.
 
-The plugin then populates Jekyll variables, so they can be used throughout the site. Things like navigation links, thumbnail and names of images picked to represent each gallery on an index page. It then runs the templates through jekyll/liquid engine and creates appropriate index.html pages in each portfolio. The individual portfolio pages are generated from the art_gallery_page.html template in _plugins directory. The overall portfolio index is based on art_gallery_index.html.
+The plugin then populates Jekyll variables, so they can be used throughout the site. Things like navigation links, thumbnail and names of images picked to represent each gallery on an index page. It then runs the templates through jekyll/liquid engine and creates appropriate index.html pages in each portfolio. The individual portfolio pages are generated from the art_gallery_page.html template in \_plugins directory. The overall portfolio index is based on art\_gallery\_index.html.
 
 You can hide individual galleries by specifying the hidden flag in gallery.yaml. You could hide specific files in a gallery by creating a subfolder in a gallery folder and moving the files there (this plugin is not recursive). Alternatively each file folder can be hidden by chaning its name to start with a dot.
 
 ### Notes
 Gallery names (folders and names in gallery.yaml) are case insensitive and can contain spaces. Note though that in some circuimstances, like using Windows subsystem for Linux to run jekyll, you might have to lowercase folder names.
+
 An invisible watermark via a Fourier Watermark is better but not implemented. That watermark is visible when viewed with the Fourier filter - for more see gmic.sourceforge.net or G'Mic plugin for Gimp
 Also an EXIF "Copyright" tag can be added (it's somewhere in the middle between the highly visible/annoying current watermark, and the invisible Fourier one)
 The plugin is not yet packaged as a gem, just not time to do it.
