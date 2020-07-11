@@ -20,6 +20,8 @@
 .cv-iframe
   height: 100vh
   width: 100%
+  @media #{$mobile}
+    display: none
 
 .projects
   h3
@@ -53,3 +55,20 @@
   .highlighter-blue
     color: $delta
     background-color: $zeta
+
+.photography
+  ul.photography-index-menu
+    text-align: center
+    list-style: none
+    padding: 0
+
+  li.photography-index-menu-item
+    display: inline-block
+    height: 50vh
+    width: 10vw
+    min-width: 50px
+
+    h5
+      font-size: 1.2rem
+      @media #{$mobile}
+        font-size: 0.5rem

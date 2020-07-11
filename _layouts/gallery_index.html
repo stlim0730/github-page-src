@@ -2,33 +2,22 @@
 layout: page
 # This page is used for the main index of galleries
 ---
-<!-- 
-<div>
-	<ul class="small-block-grid-4">
-        {% for gallery in page.galleries %}
-        <li>
-        <a href="{{ gallery['title'] }}">
-            <img class="gallery-best-image" src="{{ gallery['link'] }}/thumbs/front_{{ gallery['best_image'] }}">
-        </a>
-        <h3><a href="{{ gallery['link'] }}">{{ gallery["title"] }}</a></h3>
-        </li>
-        {% endfor %}
-	</ul>
-</div>
 
-{% for gallery in page.galleries %}
-<div class="gallery-wrapper">
-    <a href="{{ gallery['gallery'] }}">
-        <img class="gallery-best-image" src="{{ gallery['gallery'] }}/thumbs/{{ gallery['best_image'] }}">
-    </a>
-    <h3><a href="{{ gallery['gallery'] }}">{{ gallery["name"] }}</a></h3>
-    {{ gallery["images"] | size }} image{% if gallery["images"].size != 1 %}s{% endif %}
-</div>
-{% endfor %}
- -->
-
+<ul class="photography-index-menu">
 {% for gallery in site.gallery.galleries %}
-  <img src="{{ site.url }}/{{ site.gallery.dir }}/{{ gallery.path }}/thumbs/{{ gallery.best_image }}" />
+  <a href="{{ site.url }}/{{ site.gallery.dir }}/{{ gallery.path }}">
+    <li class="photography-index-menu-item"
+      style="
+      background-image: url({{ site.url }}/{{ site.gallery.dir }}/{{ gallery.path }}/{{ gallery.best_image }});
+      background-repeat: no-repeat;
+      background-position: {{ gallery.best_image_position }};
+      background-size: cover;
+      color: {{ gallery.caption_color  }};
+      ">
+      <h5>{{ gallery.title }}</h5>
+    </li>
+  </a>
 {% endfor %}
+</ul>
 
 {{ content }}
