@@ -1,0 +1,34 @@
+---
+layout: page
+# This page is used for the main index of galleries
+---
+<!-- 
+<div>
+	<ul class="small-block-grid-4">
+        {% for gallery in page.galleries %}
+        <li>
+        <a href="{{ gallery['title'] }}">
+            <img class="gallery-best-image" src="{{ gallery['link'] }}/thumbs/front_{{ gallery['best_image'] }}">
+        </a>
+        <h3><a href="{{ gallery['link'] }}">{{ gallery["title"] }}</a></h3>
+        </li>
+        {% endfor %}
+	</ul>
+</div>
+
+{% for gallery in page.galleries %}
+<div class="gallery-wrapper">
+    <a href="{{ gallery['gallery'] }}">
+        <img class="gallery-best-image" src="{{ gallery['gallery'] }}/thumbs/{{ gallery['best_image'] }}">
+    </a>
+    <h3><a href="{{ gallery['gallery'] }}">{{ gallery["name"] }}</a></h3>
+    {{ gallery["images"] | size }} image{% if gallery["images"].size != 1 %}s{% endif %}
+</div>
+{% endfor %}
+ -->
+
+{% for gallery in site.gallery.galleries %}
+  <img src="{{ site.url }}/{{ site.gallery.dir }}/{{ gallery.path }}/thumbs/{{ gallery.best_image }}" />
+{% endfor %}
+
+{{ content }}

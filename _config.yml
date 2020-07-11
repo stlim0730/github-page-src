@@ -66,12 +66,6 @@ authors:
   #   external-image: false
   #   picture: assets/images/profile.jpg
   #   twitter: johndoe
-  # jamesfoster:
-  #   name: James Foster
-  #   bio: A Man who develops software with coffee
-  #   external-image: false
-  #   picture: assets/images/james.jpg
-  #   twitter: jamesfoster
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
@@ -134,6 +128,7 @@ plugins:
   - jemoji
   - jekyll-admin
   - jekyll-paginate-v2
+  - jekyll-gallery-generator
 
 jekyll-mentions:
   base_url: https://github.com
@@ -154,3 +149,31 @@ exclude:
     "node_modules",
     "vendor",
   ]
+
+# Configs for jekyll-gallery-generator
+gallery:
+  dir: assets/images/photography         # Path to the gallery
+  symlink: false            # false: copy images into _site. true: create symbolic links (saves disk space)
+  title: "Photography"      # Title for gallery index page
+  title_prefix: ""          # Title prefix for gallery pages. Gallery title = title_prefix + gallery_name
+  sort_field: "date_time"   # How to sort galleries on the index page. Possible values are: title, date_time, best_image
+  thumbnail_size:
+    x: 250                  # max width of thumbnails (in pixels)
+    y: 250                  # max height of thumbnails (in pixels)
+  galleries:
+    - title: Landscape
+      path: landscape
+      best_image: _DSC4465.png
+      description: Landscape photos
+    - title: Animals
+      path: animals
+      best_image: _MG_2165_portfolio.jpg
+      description: Animal photos
+    - title: Sports
+      path: sports
+      best_image: _MG_7386_portfolio.jpg
+      description: Sports photos
+    - title: Astrophotography
+      path: astrophotography
+      best_image: IMG_9280_portfolio.jpg
+      description: Astrophotos
