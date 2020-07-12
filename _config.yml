@@ -163,31 +163,37 @@ gallery:
   galleries:
     - title: Nature
       path: nature
-      best_image: _DSC4465.png
+      best_image: may-lake.jpg
       best_image_position: center center
       description: Landscape photos
       caption_color: white
     - title: Cityscape
       path: cityscape
-      best_image: _DSC4465.png
-      best_image_position: center center
+      best_image: lights-xylophone.jpg
+      best_image_position: 65% center
       description: Landscape photos
       caption_color: white
     - title: Animals
       path: animals
-      best_image: _MG_2165_portfolio.jpg
+      best_image: a-lesser-panda-is-not-a-panda.jpg
       best_image_position: center center
       description: Animal photos
       caption_color: white
-    - title: Astrophotography
+    - title: Astrophotos
       path: astrophotography
-      best_image: IMG_9280_portfolio.jpg
-      best_image_position: center center
+      best_image: andromeda_galaxy.jpg
+      best_image_position: 55% center
       description: Astrophotos
       caption_color: white
     - title: Sports
       path: sports
-      best_image: _MG_7386_portfolio.jpg
-      best_image_position: left center
+      best_image: halladay-legend-on-legend.jpg
+      best_image_position: 17% center
+      description: Sports photos
+      caption_color: white
+    - title: Misc.
+      path: miscellaneous
+      best_image: the-talented-passion-christina-perry.jpg
+      best_image_position: 75% center
       description: Sports photos
       caption_color: white
