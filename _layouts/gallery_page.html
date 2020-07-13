@@ -3,36 +3,39 @@ layout: page
 # individual pages for each gallery
 ---
 
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/magnific-popup.css">
+
 {% assign thumbnailPath = page.path | remove: "/index.html" | append: "/thumbs/" %}
 
-<!-- <div>
-      	<ul class="clearing-thumbs small-block-grid-4" data-clearing>
-		{% for image in page.images %}
-        <li><a href="{{ image }}">
-        	{% if page.captions[image] == nil %}
-        	<img data-caption="<a class='clearing-link' href='/contact/'>Ask me about this work</a>" src="thumbs/{{ image }}">
-            {% else %}
-        	<img data-caption="{{ page.captions[image] }}.  <a class='clearing-link' href='/contact/'>Ask me about this work</a>" src="thumbs/{{ image }}" alt="{{ page.captions[image] }}" title="{{ page.captions[image] }}">
-            {% endif %}
-        </a></li>
-		{% endfor %}
-	</ul>
-	<div id="spinner"></div>
+<div class="photo-grid">
+    {% for file in site.static_files %}
+      {% if file.path contains thumbnailPath %}
+        {% assign imgPath = file.path | remove: "thumbs/" %}
+        <a href="{{ site.url }}/{{ imgPath }}" title="hahaha">
+          <div class="gallery-thumbnails"
+          style="background-image: url({{ site.url }}/{{ file.path }});
+          background-repeat: no-repeat;
+          background-size: cover;">
+          </div>
+        </a>
+      {% endif %}
+    {% endfor %}
 </div>
 
-{{ page.description }}
- -->
-
-{% for file in site.static_files %}
-  {% if file.path contains thumbnailPath %}
-    <div class="gallery-thumbnails"
-      style="background-image: url({{ site.url }}/{{ file.path }});
-      background-repeat: no-repeat;
-      background-size: cover;">
-    </div>
-  {% endif %}
-{% endfor %}
-
-{{ page.slug }}
-
-{{ content }}
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="{{ site.baseurl }}/assets/js/jquery.magnific-popup.min.js"></script>
+<script>
+  $(".photo-grid").magnificPopup({
+    delegate: "a",
+    type: "image",
+    image: { titleSrc: "title" },
+    gallery: { enabled: true }
+  });
+</script>
