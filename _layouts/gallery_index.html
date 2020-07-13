@@ -4,7 +4,7 @@ layout: page
 ---
 
 <ul class="photography-index-menu">
-{% for gallery in site.gallery.galleries %}
+{%- for gallery in site.gallery.galleries -%}
   <a href="{{ site.url }}/{{ site.gallery.dir }}/{{ gallery.path }}">
     <li class="photography-index-menu-item"
       style="
@@ -17,7 +17,7 @@ layout: page
       <h5>{{ gallery.title }}</h5>
     </li>
   </a>
-{% endfor %}
+{%- endfor -%}
 </ul>
 
 {{ content }}

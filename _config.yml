@@ -158,8 +158,8 @@ gallery:
   title_prefix: ""          # Title prefix for gallery pages. Gallery title = title_prefix + gallery_name
   sort_field: "date_time"   # How to sort galleries on the index page. Possible values are: title, date_time, best_image
   thumbnail_size:
-    x: 250                  # max width of thumbnails (in pixels)
-    y: 250                  # max height of thumbnails (in pixels)
+    x: 300                  # max width of thumbnails (in pixels)
+    y: 300                  # max height of thumbnails (in pixels)
   galleries:
     - title: Nature
       path: nature
