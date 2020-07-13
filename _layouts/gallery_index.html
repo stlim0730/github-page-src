@@ -1,0 +1,23 @@
+---
+layout: page
+# This page is used for the main index of galleries
+---
+
+<ul class="photography-index-menu">
+{%- for gallery in site.gallery.galleries -%}
+  <a href="{{ site.url }}/{{ site.gallery.dir }}/{{ gallery.path }}">
+    <li class="photography-index-menu-item"
+      style="
+      background-image: url({{ site.url }}/{{ site.gallery.dir }}/{{ gallery.path }}/{{ gallery.best_image }});
+      background-repeat: no-repeat;
+      background-position: {{ gallery.best_image_position }};
+      background-size: cover;
+      color: {{ gallery.caption_color  }};
+      ">
+      <h5>{{ gallery.title }}</h5>
+    </li>
+  </a>
+{%- endfor -%}
+</ul>
+
+{{ content }}

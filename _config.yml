@@ -66,12 +66,6 @@ authors:
   #   external-image: false
   #   picture: assets/images/profile.jpg
   #   twitter: johndoe
-  # jamesfoster:
-  #   name: James Foster
-  #   bio: A Man who develops software with coffee
-  #   external-image: false
-  #   picture: assets/images/james.jpg
-  #   twitter: jamesfoster
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
@@ -134,6 +128,7 @@ plugins:
   - jemoji
   - jekyll-admin
   - jekyll-paginate-v2
+  - jekyll-gallery-generator
 
 jekyll-mentions:
   base_url: https://github.com
@@ -154,3 +149,51 @@ exclude:
     "node_modules",
     "vendor",
   ]
+
+# Configs for jekyll-gallery-generator
+gallery:
+  dir: assets/images/photography         # Path to the gallery
+  symlink: true            # false: copy images into _site. true: create symbolic links (saves disk space)
+  title: "Photography"      # Title for gallery index page
+  title_prefix: ""          # Title prefix for gallery pages. Gallery title = title_prefix + gallery_name
+  sort_field: "date_time"   # How to sort galleries on the index page. Possible values are: title, date_time, best_image
+  thumbnail_size:
+    x: 300                  # max width of thumbnails (in pixels)
+    y: 300                  # max height of thumbnails (in pixels)
+  galleries:
+    - title: Nature
+      path: nature
+      best_image: may-lake.jpg
+      best_image_position: center center
+      description: Landscape photos
+      caption_color: white
+    - title: Cityscape
+      path: cityscape
+      best_image: lights-xylophone.jpg
+      best_image_position: 65% center
+      description: Landscape photos
+      caption_color: white
+    - title: Animals
+      path: animals
+      best_image: a-lesser-panda-is-not-a-panda.jpg
+      best_image_position: center center
+      description: Animal photos
+      caption_color: white
+    - title: Astrophotos
+      path: astrophotography
+      best_image: andromeda_galaxy.jpg
+      best_image_position: 55% center
+      description: Astrophotos
+      caption_color: white
+    - title: Sports
+      path: sports
+      best_image: halladay-legend-on-legend.jpg
+      best_image_position: 17% center
+      description: Sports photos
+      caption_color: white
+    - title: Misc.
+      path: miscellaneous
+      best_image: the-talented-passion-christina-perry.jpg
+      best_image_position: 75% center
+      description: Sports photos
+      caption_color: white
